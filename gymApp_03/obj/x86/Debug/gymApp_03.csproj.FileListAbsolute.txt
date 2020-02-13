@@ -6,3 +6,4 @@ C:\decidfrProjects\gymApp_03\gymApp_03\bin\Debug\gymApp_03.exe
 C:\decidfrProjects\gymApp_03\gymApp_03\bin\Debug\gymApp_03.pdb
 C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\gymApp_03.exe
 C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\gymApp_03.pdb
+C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\WindowsFormsApplication1.afisare.resources

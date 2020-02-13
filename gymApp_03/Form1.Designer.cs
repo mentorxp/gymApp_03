@@ -45,7 +45,14 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.clientiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disponibileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.totalVanduteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeClientiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iesireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -102,6 +109,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Inregistreaza";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -111,10 +119,11 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(159, 205);
             this.pictureBox1.TabIndex = 7;
@@ -169,7 +178,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(811, 54);
+            this.radioButton1.Location = new System.Drawing.Point(814, 174);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(86, 24);
             this.radioButton1.TabIndex = 12;
@@ -210,6 +219,58 @@
             this.radioButton4.Text = "Kickbox";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientiToolStripMenuItem,
+            this.listeClientiToolStripMenuItem,
+            this.iesireToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1237, 40);
+            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // clientiToolStripMenuItem
+            // 
+            this.clientiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.disponibileToolStripMenuItem,
+            this.totalVanduteToolStripMenuItem});
+            this.clientiToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientiToolStripMenuItem.Name = "clientiToolStripMenuItem";
+            this.clientiToolStripMenuItem.Size = new System.Drawing.Size(102, 36);
+            this.clientiToolStripMenuItem.Text = "Cartele";
+            // 
+            // disponibileToolStripMenuItem
+            // 
+            this.disponibileToolStripMenuItem.Name = "disponibileToolStripMenuItem";
+            this.disponibileToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
+            this.disponibileToolStripMenuItem.Text = "Disponibile";
+            this.disponibileToolStripMenuItem.Click += new System.EventHandler(this.disponibileToolStripMenuItem_Click);
+            // 
+            // totalVanduteToolStripMenuItem
+            // 
+            this.totalVanduteToolStripMenuItem.Name = "totalVanduteToolStripMenuItem";
+            this.totalVanduteToolStripMenuItem.Size = new System.Drawing.Size(236, 36);
+            this.totalVanduteToolStripMenuItem.Text = "Total Vandute";
+            this.totalVanduteToolStripMenuItem.Click += new System.EventHandler(this.totalVanduteToolStripMenuItem_Click);
+            // 
+            // listeClientiToolStripMenuItem
+            // 
+            this.listeClientiToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listeClientiToolStripMenuItem.Name = "listeClientiToolStripMenuItem";
+            this.listeClientiToolStripMenuItem.Size = new System.Drawing.Size(150, 36);
+            this.listeClientiToolStripMenuItem.Text = "Liste Clienti";
+            this.listeClientiToolStripMenuItem.Click += new System.EventHandler(this.listeClientiToolStripMenuItem_Click);
+            // 
+            // iesireToolStripMenuItem
+            // 
+            this.iesireToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iesireToolStripMenuItem.Name = "iesireToolStripMenuItem";
+            this.iesireToolStripMenuItem.Size = new System.Drawing.Size(83, 36);
+            this.iesireToolStripMenuItem.Text = "Iesire";
+            this.iesireToolStripMenuItem.Click += new System.EventHandler(this.iesireToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -232,9 +293,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,6 +323,12 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem clientiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disponibileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem totalVanduteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listeClientiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iesireToolStripMenuItem;
     }
 }
 
