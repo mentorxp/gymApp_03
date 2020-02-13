@@ -1,0 +1,8 @@
+C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\gymApp_03.csprojResolveAssemblyReference.cache
+C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\gymApp_03.csproj.GenerateResource.Cache
+C:\decidfrProjects\gymApp_03\gymApp_03\bin\Debug\gymApp_03.exe
+C:\decidfrProjects\gymApp_03\gymApp_03\bin\Debug\gymApp_03.pdb
+C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\gymApp_03.exe
+C:\decidfrProjects\gymApp_03\gymApp_03\obj\x86\Debug\gymApp_03.pdb

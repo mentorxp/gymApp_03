@@ -134,6 +134,7 @@
             this.comboBox1_ListaNume.Name = "comboBox1_ListaNume";
             this.comboBox1_ListaNume.Size = new System.Drawing.Size(236, 28);
             this.comboBox1_ListaNume.TabIndex = 8;
+            this.comboBox1_ListaNume.SelectedIndexChanged += new System.EventHandler(this.comboBox1_ListaNume_SelectedIndexChanged);
             // 
             // comboBox2_Cartele
             // 
@@ -149,6 +150,7 @@
             this.comboBox2_Cartele.Name = "comboBox2_Cartele";
             this.comboBox2_Cartele.Size = new System.Drawing.Size(236, 28);
             this.comboBox2_Cartele.TabIndex = 9;
+            this.comboBox2_Cartele.SelectedIndexChanged += new System.EventHandler(this.comboBox2_Cartele_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
